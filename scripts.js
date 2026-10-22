@@ -117,12 +117,12 @@ function submitOrder() {
 
     // Format Message
     const message = `Halo Admin L'STORE, saya ingin memesan:\n\n` +
-    `🎮 *Game:* Mobile Legends (Paket Fast)\n` +
-    `🆔 *User ID:* ${userId}\n` +
-    `🌐 *Zone ID / Server:* ${serverId}\n` +
-    `💎 *Paket:* ${selectedItem.name}\n` +
-    `💰 *Harga:* ${selectedItem.price}\n` +
-    `💳 *Metode Pembayaran:* ${selectedPayment}\n\n` +
+    `**Game:** Mobile Legends (Paket Fast)\n` +
+    `**User ID:** ${userId}\n` +
+    `**Zone ID / Server:** ${serverId}\n` +
+    `**Paket:** ${selectedItem.name}\n` +
+    `**Harga:** ${selectedItem.price}\n` +
+    `**Metode Pembayaran:** ${selectedPayment}\n\n` +
     `Mohon diproses, terima kasih!`;
 
     // Redirect to Telegram
