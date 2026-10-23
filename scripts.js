@@ -24,7 +24,7 @@ const pricelistData = [
     { name: "875 Diamond", bonus: "774+101", price: "Rp257.500" },
     { name: "1045 Diamond", bonus: "928+117", price: "Rp307.000" },
     { name: "1221 Diamond", bonus: "1083+138", price: "Rp360.000" },
-    { name: "1544 Diamond",price: "Rp458.000" },
+    { name: "1544 Diamond", price: "Rp458.000" },
     { name: "2010 Diamond", price: "Rp560.000" },
     { name: "2503 Diamond", price: "Rp705.000" },
     { name: "3055 Diamond", price: "Rp865.000" },
