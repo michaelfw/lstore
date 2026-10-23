@@ -138,10 +138,7 @@ function submitOrder() {
     }
 
     if (!selectedPayment) {
-        const paymentSec = document.getElementById('paymentSection');
-        if (paymentSec) {
-            paymentSec.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }
+        scrollToPayment();
         return;
     }
 
