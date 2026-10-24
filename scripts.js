@@ -173,7 +173,34 @@ function closeCustomModal() {
   document.getElementById('customModal').style.display = 'none';
 }
 
-// Initialize Page
+// Jalankan saat halaman dimuat untuk memanggil data yang tersimpan sebelumnya dan initialize page
 document.addEventListener('DOMContentLoaded', () => {
-    renderItems();
+  renderItems();
+  loadSavedCredentials();
+  
+  // Event listener untuk menyimpan otomatis saat diketik
+  document.getElementById('userId').addEventListener('input', saveCredentials);
+  document.getElementById('serverId').addEventListener('input', saveCredentials);
 });
+
+// Fungsi menyimpan ID ke localStorage browser
+function saveCredentials() {
+  const userId = document.getElementById('userId').value;
+  const serverId = document.getElementById('serverId').value;
+  localStorage.setItem('lstore_user_id', userId);
+  localStorage.setItem('lstore_server_id', serverId);
+}
+
+// Fungsi memuat kembali ID yang pernah disimpan
+function loadSavedCredentials() {
+  const savedUserId = localStorage.getItem('lstore_user_id');
+  const savedServerId = localStorage.getItem('lstore_server_id');
+  
+  if (savedUserId) {
+    document.getElementById('userId').value = savedUserId;
+  }
+  if (savedServerId) {
+    document.getElementById('serverId').value = savedServerId;
+  }
+}
+
