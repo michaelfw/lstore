@@ -468,3 +468,7 @@ footer {
     grid-template-columns: 1fr;
     }
 }
+
+#paymentSection {
+  scroll-margin-top: 95px; /* Sesuaikan dengan tinggi header agar ada jarak */
+}
